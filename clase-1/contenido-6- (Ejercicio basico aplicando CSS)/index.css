@@ -1,0 +1,45 @@
+body
+{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: blanchedalmond;
+}
+
+h1 
+{
+    color: red;
+    font-size: 42px;
+}
+
+p 
+{
+    color: black;
+    font-size: 22px;
+}
+
+button 
+{
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ol
+{
+    text-align: left;
+    background-color: black;
+    color: white;
+    width: 50%;
+}
+
+li
+{
+    border: 1px solid red;
+    max-width: fit-content;
+    margin-bottom: 15px;
+}

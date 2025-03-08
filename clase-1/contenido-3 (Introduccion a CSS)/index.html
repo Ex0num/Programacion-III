@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Titulo principal</h1>
+
+    <h1>Otro elemento titulo</h1>
+
+    <div>
+        <h2>Parrafo 1</h2>
+        <p class="mis-parrafos">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Delectus repellat veritatis quasi repellendus dolorem maiores
+            quibusdam. Nesciunt rem esse molestias nihil sint culpa! 
+            Exercitationem incidunt ducimus, nemo reprehenderit maxime 
+            temporibus.
+        </p>
+        
+        <h2>Parrafo 2</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Delectus repellat veritatis quasi repellendus dolorem maiores
+            quibusdam. Nesciunt rem esse molestias nihil sint culpa! 
+            Exercitationem incidunt ducimus, nemo reprehenderit maxime 
+            temporibus.
+        </p>
+
+        <h2>Parrafo 3</h2>
+        <p class="mis-parrafos">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Delectus repellat veritatis quasi repellendus dolorem maiores
+            quibusdam. Nesciunt rem esse molestias nihil sint culpa! 
+            Exercitationem incidunt ducimus, nemo reprehenderit maxime 
+            temporibus.
+        </p>
+
+        <h2>Parrafo 4</h2>
+        <p class="mis-parrafos" id="mi-parrafo-especial">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Delectus repellat veritatis quasi repellendus dolorem maiores
+            quibusdam. Nesciunt rem esse molestias nihil sint culpa! 
+            Exercitationem incidunt ducimus, nemo reprehenderit maxime 
+            temporibus.
+        </p>
+
+        <button>Hacer magia</button>
+    </div>
+
+    <button>Otro boton</button>
+
+    <div>
+        <h3 class="mi-titulo">Un titulo adentro de un div</h3>
+        <h3 class="mi-otro-titulo">Otro titulo adentro de un div</h3>
+    </div>
+
+    <div>
+        <input type="text" placeholder="Ingrese usuario">
+        <button id="boton-enviar-usuario">Enviar</button>
+    </div>
+
+    <!-- Con la etiqueta Style puedo crear codigo CSS dentro de un archivo con codigo HTML -->
+    <style>
+        /* Lo estoy aplicando a todos los elementos h1 de la pagina */
+        h1
+        {
+            font-size: 40px;
+            color: blue;
+        }
+
+        /* Lo estoy aplicando a todas las clases llamadas 'mis-parrafos' mediante el "." */
+        .mis-parrafos
+        {
+            background-color: red;
+        }
+
+        /* Lo estoy aplicando a un unico elemento llamado 'mi-parrafo-especial' mediante el "#" */
+        #mi-parrafo-especial
+        {
+            font-size: 32px;
+        }
+
+        /* 
+        Vimos que puedo hacer referencia a elementos HTML, a Clases, a ID's. Pero tambien podemos usar las jerarquias para referenciar a un grupo
+        de elementos, por ejemplo, a todos los elementos button que su padre sea un div.
+
+        elemento-html -> elemento-html
+        elemento-html -> clase
+        clase -> clase
+        elemento-html -> elemento-html -> elemento-html -> elemento-html
+        
+        */
+        div button
+        {
+            background-color: violet;
+        }
+
+        div .mi-titulo
+        {
+            background-color: aqua;
+        }
+
+        /* Tambien, para no repetir codigo, puedo aplicar estilos a varias referencias */
+        div input,
+        #boton-enviar-usuario
+        {
+            border-radius: 18px;
+            font-size: 19px;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+
+        div input
+        {
+            border-radius: 18px;
+            font-size: 19px;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+
+        #boton-enviar-usuario
+        {
+            border-radius: 18px;
+            font-size: 19px;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+
+    </style>
+</body>
+</html>
