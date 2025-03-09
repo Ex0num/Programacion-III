@@ -1,0 +1,127 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #d9d5d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+form 
+{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0000001a;
+    width: 300px;
+}
+
+h2 
+{
+    text-align: center;
+}
+
+div 
+{
+    margin-bottom: 15px;
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, 
+select, 
+textarea 
+{
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select
+{
+    width: 96%;
+}
+
+textarea
+{
+    min-height: 50px;
+    max-height: 150px;
+    min-width: 50%;
+    max-width: 90%;
+}
+
+#seccion-terminos-y-condiciones
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#input-aceptar-terminos-y-condiciones
+{
+    width: 50px;
+}
+
+#label-aceptar-terminos-y-condiciones
+{
+    font-size: 12px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+span
+{
+    font-size: 11px;
+}
+
+button 
+{
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    animation: heartbeat 1.5s ease-in-out infinite both
+}
+button:hover 
+{
+    background-color: #0056b3;
+}
+
+/* --- Animacion para botones --- */
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+@media (max-width: 800px)
+{
+    h1
+    {
+        font-size: 24px;
+    }
+}
+
+@media (max-height: 700px)
+{
+    h1
+    {
+        background-color: red;
+    }
+}
+
+@media (max-width: 400px) and (max-height: 600px)
+{
+    h1
+    {
+        background-color: blue;
+    }
+}
