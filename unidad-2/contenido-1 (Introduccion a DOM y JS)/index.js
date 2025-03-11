@@ -79,4 +79,4 @@ mis_parrafos_especiales.forEach( (element) =>
 //--- Vimos como obtener la referencia de un objeto en JS por su ID
 //--- Vimos como obtener la referencia de varios objetos iguales (parrafos) o distintos pero con la misma clase
 //--- Vimos como acceder y modificar el texto de un elemento ---//
-//--- Vimos como asignar un comportamiento a uno o varios objetos del HTML ya sea por referencia (clase/id) o desde el mismo HTML 
+//--- Vimos como asignar un comportamiento a un evento (click) de uno o varios objetos del HTML ya sea por referencia (clase/id) o desde el mismo HTML 

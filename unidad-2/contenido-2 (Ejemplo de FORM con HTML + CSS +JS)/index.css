@@ -83,6 +83,12 @@ textarea
     font-weight: 400;
 }
 
+.input-radios
+{
+    width: auto;
+    margin: 15px;
+}
+
 span
 {
     font-size: 11px;

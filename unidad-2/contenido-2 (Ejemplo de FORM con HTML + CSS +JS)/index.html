@@ -38,12 +38,20 @@
             <textarea id="mensaje" name="mensaje"></textarea>
         </div>
 
+        <div>
+            <label>Nacionalidad</label>
+            <div>
+                <input class="input-radios" type="radio" id="nacionalidad-argentina" name="nacionalidad" value="argentina" required>Argentina 
+                <input class="input-radios" type="radio" id="nacionalidad-extranjera" name="nacionalidad" value="extranjera">Extranjera
+            </div>
+        </div>
+
         <div id="seccion-terminos-y-condiciones">
             <input type="checkbox" name="terminos" required id="input-aceptar-terminos-y-condiciones">   
             <label id="label-aceptar-terminos-y-condiciones">Acepto los términos y condiciones</label>
         </div>
 
-        <button type="submit">Enviar</button>
+        <button>Enviar</button>
     </form>
 </body>
 </html>
