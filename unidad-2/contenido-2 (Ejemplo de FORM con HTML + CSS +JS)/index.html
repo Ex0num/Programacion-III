@@ -13,11 +13,6 @@
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required>
         </div>
-
-        <div>
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email" required>
-        </div>
         
         <div>
             <label for="edad">Edad</label>
@@ -27,9 +22,9 @@
         <div>
             <label for="genero">Género</label>
             <select id="genero" name="genero">
-                <option value="masculino">Masculino</option>
-                <option value="femenino">Femenino</option>
-                <option value="otro">Otro</option>
+                <option class="opcion-genero" value="masculino">Masculino</option>
+                <option class="opcion-genero" value="femenino">Femenino</option>
+                <option class="opcion-genero" value="otro">Otro</option>
             </select>
         </div>
 
@@ -41,7 +36,7 @@
         <div>
             <label>Nacionalidad</label>
             <div>
-                <input class="input-radios" type="radio" id="nacionalidad-argentina" name="nacionalidad" value="argentina" required>Argentina 
+                <input class="input-radios" type="radio" id="nacionalidad-argentina" name="nacionalidad" value="argentina" required checked>Argentina 
                 <input class="input-radios" type="radio" id="nacionalidad-extranjera" name="nacionalidad" value="extranjera">Extranjera
             </div>
         </div>
@@ -51,7 +46,26 @@
             <label id="label-aceptar-terminos-y-condiciones">Acepto los términos y condiciones</label>
         </div>
 
-        <button>Enviar</button>
+        <button type="button" onclick="enviarFormulario()">Enviar</button>
     </form>
+
+    <table id="tabla-personas">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Género</th>
+                <th>Nacionalidad</th>
+                <th>Mensaje</th>
+            </tr>
+        </thead>
+        <tbody id="tbody-personas">
+            <!-- Aca vamos a agregar las filas dinamicamente, a medida que se nos dan de alta -->
+        </tbody>
+    </table>
+    <button id="btn-borrar-registros" onclick="limpiarTabla()">Borrar registros</button>
+    <button id="btn-borrar-ultimo-registro" onclick="limpiarUltRegistroTabla()">Borrar ultimo</button>
+
+    <script src="./index.js"></script>
 </body>
 </html>
